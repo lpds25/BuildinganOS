@@ -1,0 +1,28 @@
+[book]
+authors = ["Shaun Hamilton"]
+language = "en"
+multilingual = false
+src = "src"
+title = "freeCodeCampOS"
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.1"    # do not edit: managed by `mdbook-admonish install`
+
+[output]
+
+[output.unlink]
+optional = true
+ignore-files = ["CHANGELOG.md"]
+
+[output.html]
+default-theme = "dark"
+preferred-dark-theme = "dark"
+additional-css = ["./mdbook-admonish.css"]
+mathjax-support = true
+site-url = "/freeCodeCampOS/"
+
+[build]
+build-dir = "book" # the directory where the output is placed
